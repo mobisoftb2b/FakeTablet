@@ -89,5 +89,10 @@ namespace FakeTablet
         {
             st.updateAck();
         }
+
+        private void pushQueueTest_Click(object sender, EventArgs e)
+        {
+            st.pushQueueTest();
+        }
     }
 }

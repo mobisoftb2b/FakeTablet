@@ -74,6 +74,17 @@ namespace FakeTablet
 
         }
 
+        public void pushQueueTest()
+        {
+            m.SendMessage($@"{{""RequestID"": ""{RequestID}"",  ""testNumber"": ""{TestNumber}"", ""pTime"": ""'20201011111446'"",  ""StatusChangeTime"": ""'1602404086837'"", ""AgentId"": ""'5985'"", ""AgentName"": ""דואהדה עיסאם"", ""EmployeeId"": ""'{EmployeeId}'"", 
+                     ""EmployeeName"": ""דואהדה עיסאם"",  ""ActivityCode"": ""'44'"", ""ActivityDescription"": ""'סימולצית המחרה'"",  ""Cust_Key"": ""'1'"",
+                    ""CustName"": ""'Unknown client'"",  ""DocType"": ""''"",  ""DocNum"": ""''"",  ""DocName"": ""''"",  ""Comment"": ""''"",
+                    ""ManagerEmployeeId"": ""{ManagerEmplId}"",  ""ManagerName"": ""'הופמן רועי'"", ""RequestStatus"": ""'0'"",  ""ManagerStatusTime"": ""'0'"",
+                    ""ManagerComment"": ""''"", ""ManagerDeviceType"": ""'1'"",  ""TransmissionState"": ""'1'"",  ""IsTest"": ""'1'"",
+                    ""consumerToken"": [{{ ""consumerToken"": ""674976"", ""AndroidId"": ""{DeviceUniqueID}"",  ""StatusChangeTime"": 0, ""queueName"": ""{queueName}"" }}],
+                    ""Subject"": ""1 שורות, 12 קר, 0 יח"", ""command"": ""askApprove"", ""test"": ""pushQueue""}}", queueNameGlobal);
+
+        }
         public void updateAck()
         {
             m.SendMessage($@"{{""RequestID"": ""{RequestID}"",  ""testNumber"": ""{TestNumber}"", ""pTime"": ""'20201011111446'"",  ""StatusChangeTime"": ""'1602404086837'"", ""EmployeeId"": ""'{EmployeeId}'"", 

@@ -32,6 +32,7 @@
             this.queueName = new System.Windows.Forms.Label();
             this.test1 = new System.Windows.Forms.Button();
             this.updateAck = new System.Windows.Forms.Button();
+            this.pushQueueTest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // GetManagerAuthorizationGroupActivities
@@ -140,11 +141,22 @@
             this.updateAck.UseVisualStyleBackColor = true;
             this.updateAck.Click += new System.EventHandler(this.updateAck_Click);
             // 
+            // pushQueueTest
+            // 
+            this.pushQueueTest.Location = new System.Drawing.Point(212, 35);
+            this.pushQueueTest.Name = "pushQueueTest";
+            this.pushQueueTest.Size = new System.Drawing.Size(116, 23);
+            this.pushQueueTest.TabIndex = 11;
+            this.pushQueueTest.Text = "PushQueueTest";
+            this.pushQueueTest.UseVisualStyleBackColor = true;
+            this.pushQueueTest.Click += new System.EventHandler(this.pushQueueTest_Click);
+            // 
             // Agent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pushQueueTest);
             this.Controls.Add(this.updateAck);
             this.Controls.Add(this.test1);
             this.Controls.Add(this.queueName);
@@ -176,6 +188,7 @@
         private System.Windows.Forms.Label queueName;
         private System.Windows.Forms.Button test1;
         private System.Windows.Forms.Button updateAck;
+        private System.Windows.Forms.Button pushQueueTest;
     }
 }
 
